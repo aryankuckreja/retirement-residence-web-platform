@@ -8,7 +8,7 @@
 ![CMS](https://img.shields.io/badge/CMS-Decap%20%2B%20GitHub-0a7)
 ![Status](https://img.shields.io/badge/status-in%20production-brightgreen)
 
-> This is a public case study. The production source code lives in a private repository owned by the client.
+> This is a public case study. The production source code lives in a private repository owned by the business.
 > The `excerpts/` folder contains selected, cleaned-up pieces of the real implementation so that the engineering can be reviewed without publishing the full site.
 
 ![Butternut Manor home page](screenshots/butternut-home.png)
@@ -17,8 +17,8 @@
 
 | | |
 |---|---|
-| **Client** | Butternut Manor Retirement Home (Uxbridge, ON) and Queens Village for Seniors (London, ON) |
-| **Role** | Web Developer, paid client engagement (May 2026 to present). Product owner and technical lead |
+| **Residences** | Butternut Manor Retirement Home (Uxbridge, ON) and Queens Village for Seniors (London, ON) |
+| **Role** | Web Developer, paid engagement (May 2026 to present). Product owner and technical lead |
 | **Live** | [butternutmanor.ca](https://butternutmanor.ca) (in production since Nov 4, 2026) |
 | **Replaced** | A legacy WordPress site |
 | **Users** | Residents' families and prospective residents (public), the owner and general manager (content approval), front-line staff (content submission) |
@@ -87,7 +87,7 @@ More detail: [docs/architecture.md](docs/architecture.md) and [docs/staff-publis
 
 ## Results
 
-- Live in production on the client's own domain since **November 4, 2026**, approved by the owner and general manager.
+- Live in production on the residence's own domain since **November 4, 2026**, approved by the owner and general manager.
 - The owner manages content herself through `/admin`; staff updates go through `/submit` with owner approval.
 - Delivered through **5+ feedback rounds with 5 stakeholders**, from the owner and general manager to activities staff.
 
@@ -111,3 +111,7 @@ screenshots/                    images of the live sites
 ## Tech
 
 HTML, CSS, JavaScript (ES modules), Node.js serverless functions on Vercel, GitHub REST API (git data API, pull requests), Decap CMS, GitHub OAuth, Meta Graph API, HMAC-signed tokens, Python (site checker, calendar rendering), Playwright, ffmpeg.
+
+## How this was built
+
+I use Claude as a working part of my development process. I was product owner and technical lead: requirements, stakeholder feedback, every account and configuration (GitHub, Vercel, OAuth, environment variables, tokens), deploys and live testing. Claude wrote and debugged code under my direction, and I reviewed and tested every change before it shipped.
